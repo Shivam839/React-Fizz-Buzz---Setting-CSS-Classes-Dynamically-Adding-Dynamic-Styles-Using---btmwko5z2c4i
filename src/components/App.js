@@ -5,16 +5,16 @@ const App = () => {
   const increment = ()=>{
     let temp=value+1;
     if(temp%3==0 && temp%5==0){
-      document.getElementById('para').className='fizzbuzz'
+      document.getElementById('counter').className='fizzbuzz'
     }
     else if(temp%3==0){
-      document.getElementById('para').className='fizz'
+      document.getElementById('counter').className='fizz'
     }
     else if(temp%5==0){
-      document.getElementById('para').className='buzz'
+      document.getElementById('counter').className='buzz'
     }
     else{
-      document.getElementById('para').className='normal'
+      document.getElementById('counter').className='normal'
     }
     setValue(temp)
     
@@ -28,16 +28,16 @@ const App = () => {
     temp=1
   }
   if(temp%3==0 && temp%5==0){
-    document.getElementById('para').className='fizzbuzz'
+    document.getElementById('counter').className='fizzbuzz'
   }
   else if(temp%3==0){
-    document.getElementById('para').className='fizz'
+    document.getElementById('counter').className='fizz'
   }
   else if(temp%5==0){
-    document.getElementById('para').className='buzz'
+    document.getElementById('counter').className='buzz'
   }
   else{
-    document.getElementById('para').className='normal'
+    document.getElementById('counter').className='normal'
   }
     setValue(temp)
   } 
@@ -46,7 +46,7 @@ const App = () => {
   return (
     <div id="main">
       <button onClick={increment}>Increment</button>
-      <p id="para" className='normal'>{value}</p>
+      <div id="counter" className='normal'>{value}</div>
       <button onClick={decrement}>Decrement</button>
     </div>
   )
