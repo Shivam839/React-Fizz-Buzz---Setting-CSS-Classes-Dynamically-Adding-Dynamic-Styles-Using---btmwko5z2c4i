@@ -17,6 +17,7 @@ const App = () => {
       document.getElementById('counter').className='normal'
     }
     setValue(temp)
+    // console.log(document.getElementById('counter').className)
     
   }  
   const decrement = ()=>{
